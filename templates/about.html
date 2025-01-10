@@ -6,10 +6,140 @@
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+
+   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+   nav.navbar {
+    background: linear-gradient(to right, turquoise, #FFE53B);
+    color: black;
+  }
+
+  nav.navbar .nav-link {
+    color: black !important;
+    font-weight: bold;
+  }
+
+  nav.navbar .navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem; /* Adjust size as needed */
+    color: black; /* Default color for the navbar brand */
+  }
+  .texts1 {
+    color: rgb(255, 0, 0) !important; /* Make the text white */
+    /*text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    /* Creates a black outline effect */
+    font-family: 'Abril Fatface', cursive; /* Use Abril Fatface font */
+  }
+
+  /* Styling specifically for "health" */
+  nav.navbar .navbar-brand span.text-primary {
+    color: rgb(255, 0, 0) !important; /* Make the text white */
+    /*text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    /* Creates a black outline effect */
+    font-family: 'Abril Fatface', cursive; /* Use Abril Fatface font */
+  }
+
+  nav.navbar .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+
+  nav.navbar .nav-link:hover {
+    text-decoration: underline;
+    color: black !important;
+  }
+  .bg-light {
+  background: linear-gradient(to right, #fefefe, #ffffff, #fcfcfc); /* Gradient background */
+}
+/* Gradient for the button */
+.btn-primary {
+  background: #68b764!important;
+  border: none; /* Remove any border */
+}
+
+/* Button hover effect (optional) */
+.btn-primary:hover {
+  background: linear-gradient(to right, #FFE53B, turquoise) !important;
+  border: black;
+
+}
+
+/* Gradient background for the footer */
+.page-footer {
+  background: linear-gradient(to right, turquoise, #FFE53B);
+  color: black; /* Text color */
+}
+
+/* Footer links color change */
+.page-footer .footer-link {
+  color: black;
+}
+
+.page-footer .footer-link:hover {
+  color: #FFE53B; /* Hover effect for footer links */
+}
+.hero-section .container {
+  text-align: left; /* Align text to the left */
+  max-width: 600px; /* Limit the container width */
+  margin-left: 0; /* Push content to the left side */
+}
+
+.page-hero .subhead {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.page-hero h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.page-hero .btn-primary {
+  margin-top: 15px;
+}
+.overlay-dark {
+  background-color: rgba(255, 255, 255, 0); /* Adjust opacity for lightness */
+}
+.info-container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-container:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.info-container h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-container p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+  </style>
+
+
   <title>healthOracle - AI-Powered Health Insights for Accurate Disease Prediction</title>
   <link rel="icon"
   type="image/ico"
   href="static/img/cardiogram.ico">
+
   <link rel="stylesheet" href="../static/css/maicons.css">
 
   <link rel="stylesheet" href="../static/css/bootstrap.css">
@@ -26,29 +156,11 @@
   <div class="back-to-top"></div>
 
   <header>
-    <div class="topbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 text-sm">
-            <div class="site-info">
-              <a href="#"><span class="mai-mail text-primary"></span> UPM</a>
-            </div>
-          </div>
-          <!-- <div class="col-sm-4 text-right text-sm">
-            <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-            </div>
-          </div> -->
-        </div> <!-- .row -->
-      </div> <!-- .container -->
-    </div> <!-- .topbar -->
+
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">health</span>Oracle</a>
+        <a class="navbar-brand" href="index"><span class="text-primary">health</span>Oracle</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,10 +168,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="index">Home</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="about">About Us</a>
             </li>
             <li class="nav-item">
@@ -74,31 +186,21 @@
       </div> <!-- .container -->
     </nav>
   </header>
-
-  <div class="page-hero bg-image overlay-dark" style="background-image: url(../static/img/bg_image_1.jpg);">
+  <div class="page-hero bg-image overlay-dark" style="background-image: url(../static/img/background4.jpg);">
     <div class="hero-section">
-      <div class="container text-center wow zoomIn">
+      <div class="container text-left wow zoomIn" style="text-align: left; max-width: 600px;">
         <span class="subhead">Let's make your diagnosis simpler</span>
         <h1 class="display-4">healthOracle - AI-Powered Health Insights for Accurate Disease Prediction</h1>
         <a href="demo" class="btn btn-primary">Know your health <span class="mai-arrow-forward-circle"></span></a>
-
       </div>
     </div>
   </div>
-
 
   <div class="bg-light">
     <div class="page-section py-3 mt-md-n5 custom-index">
       <div class="container">
         <div class="row justify-content-center">
-          <!-- <div class="col-md-4 py-3 py-md-0"> -->
-            <!-- <div class="card-service wow fadeInUp">
-              <div class="circle-shape bg-secondary text-white">
-                <span class="fa6-solid:kit-medical"></span>
-              </div> 
-               <p><span>Chat</span> with a doctors</p>
-            </div>
-          </div> -->
+
           <div class="col-md-4 py-3 py-md-0">
             <div class="card-service wow fadeInUp">
               <div class="circle-shape bg-primary text-white">
@@ -119,12 +221,14 @@
       </div>
     </div> <!-- .page-section -->
 
+
     <div class="page-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
-            <h1>Welcome to <b> healthOracle </b></h1>
-            <p class="text-grey mb-4">In today’s fast-paced world, many individuals struggle to prioritize their health due to their busy lifestyles. The inconvenience of visiting a doctor for every illness often leads people to search online for quick fixes, which may result in incorrect or potentially harmful decisions. The overwhelming amount of information available online can be confusing, leading to unnecessary panic and self-diagnosis. healthOracle is here to change that. By leveraging machine learning, our platform aims to provide a more reliable and efficient way to predict potential diseases based on the symptoms users experience. Through intelligent analysis, we can offer insights to help users make informed decisions about their health, removing the guesswork and anxiety.</p>
+            <h1>Welcome to <b><span class="texts1" style="font-family: 'Abril Fatface', cursive; color: red;">health</span>Oracle</b></h1>
+            <p class="text-grey mb-4" style="color: black;">In today’s fast-paced world, many individuals struggle to prioritize their health due to their busy lifestyles. The inconvenience of visiting a doctor for every illness often leads people to search online for quick fixes, which may result in incorrect or potentially harmful decisions. The overwhelming amount of information available online can be confusing, leading to unnecessary panic and self-diagnosis. healthOracle is here to change that. By leveraging machine learning, our platform aims to provide a more reliable and efficient way to predict potential diseases based on the symptoms users experience. Through intelligent analysis, we can offer insights to help users make informed decisions about their health, removing the guesswork and anxiety.</p>
+
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
             <div class="img-place custom-img-1">
@@ -133,60 +237,49 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 py-3 wow fadeInUp">
-            <h1>Purpose of the <b>healthOracle </b></h1>
-            <p class="text-grey mb-4">The primary goal of healthOracle is to empower users to identify potential health issues based on the symptoms they provide, along with a confidence score that reflects the likelihood of the disease. By offering a scientifically-backed diagnosis, healthOracle aims to minimize reliance on unreliable online resources and ensure users receive accurate information. This tool not only offers an accessible platform for self-assessment but also serves as an important resource for people living in remote or underserved areas, where access to healthcare may be limited. By focusing on students and individuals who may not have frequent access to medical professionals, healthOracle strives to be an effective tool for maintaining better health, anytime, anywhere.</p>
+
+<div class="container">
+  <div class="row align-items-center"> <!-- Changed to align items vertically -->
+      <div class="col-lg-6 py-3 wow fadeInLeft"> <!-- Text on the right -->
+        <div class="img-place custom-img-1">
+              <img src="../static/img/new3.png" alt="">
           </div>
+          </div>
+      <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms"> <!-- Image on the left side -->
+        <h1>Purpose of <b><span class="texts1" style="font-family: 'Abril Fatface', cursive; color: red;">health</span>Oracle</b></h1>
+        <p class="text-grey mb-4 text-left">The primary goal of healthOracle is to empower users to identify potential health issues based on the symptoms they provide, along with a confidence score that reflects the likelihood of the disease. By offering a scientifically-backed diagnosis, healthOracle aims to minimize reliance on unreliable online resources and ensure users receive accurate information. This tool not only offers an accessible platform for self-assessment but also serves as an important resource for people living in remote or underserved areas, where access to healthcare may be limited. By focusing on students and individuals who may not have frequent access to medical professionals, healthOracle strives to be an effective tool for maintaining better health, anytime, anywhere.</p>
 
-        </div>
       </div>
+  </div>
+</div>
+</div> <!-- .bg-light -->
     </div> <!-- .bg-light -->
-  </div> <!-- .bg-light -->
 
-  <footer class="page-footer">
+  <footer class="page-footer" style="padding-top: 10px; padding-bottom: 10px;">
     <div class="container">
-      <div class="row px-md-3">
-        <div class="col-sm-6 col-lg-3 py-3">
-          <h5>Company</h5>
-          <ul class="footer-menu">
-            <li><a href="about">About Us</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Medical Team</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-lg-3 py-3">
-          <h5>More</h5>
-          <ul class="footer-menu">
-            <li><a href="#">Terms & Condition</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Join as Doctors</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-lg-3 py-3">
-          <h5>Contact</h5>
-          <p class="footer-link mt-2">Universiti Putra Malaysia</p>
-          <a href="#" class="footer-link">pku.upm.edu.my</a>
+
+        <div class="col-sm-12 col-lg-12 py-3">
+          <h5 style="color: black;">healthOracle</h5>
+          <div class="footer-menu">
+            <p style="color: white;">Choi MingXian</p>
+            <p style="color: white;">Nurul Saidahtul Fatiha binti Shaharudin</p>
+            <p style="color: white;">Nur Hanan binti Sallehuddin</p>
+            <p style="color: white;">Liu RongHao</p>
+          </div>
         </div>
       </div>
 
-      <hr>
+      <hr style="border-top: 1px solid #000; width: 100%; margin: 10px 0;">
 
-      <p id="copyright">Copyright &copy; 2025. All right reserved</p>
+      <p id="copyright" class="text-center" style="color: black; margin-bottom: 0;">Copyright &copy; 2025. All rights reserved</p>
     </div>
   </footer>
 
-<script src="../static/js/jquery-3.5.1.min.js"></script>
-
-<script src="../static/js/bootstrap.bundle.min.js"></script>
-
-<script src="../static/vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-<script src="../static/vendor/wow/wow.min.js"></script>
-
-<script src="../static/js/theme.js"></script>
+  <script src="../static/js/jquery-3.5.1.min.js"></script>
+  <script src="../static/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="../static/vendor/wow/wow.min.js"></script>
+  <script src="../static/js/theme.js"></script>
   
 </body>
 </html>

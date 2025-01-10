@@ -24,8 +24,47 @@
   <link rel="stylesheet" href="../static/css/theme.css">
 
 <style>
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
   /* Main styles */
+  nav.navbar {
+   background: linear-gradient(to right, turquoise, #FFE53B);
+   color: black;
+ }
+
+ nav.navbar .nav-link {
+   color: black !important;
+   font-weight: bold;
+ }
+
+ nav.navbar .navbar-brand {
+   font-family: 'Abril Fatface', cursive;
+   font-size: 2rem; /* Adjust size as needed */
+   color: black; /* Default color for the navbar brand */
+ }
+ .texts1 {
+   color: rgb(255, 0, 0) !important; /* Make the text white */
+   /*text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+   /* Creates a black outline effect */
+   font-family: 'Abril Fatface', cursive; /* Use Abril Fatface font */
+ }
+
+ /* Styling specifically for "health" */
+ nav.navbar .navbar-brand span.text-primary {
+   color: rgb(255, 0, 0) !important; /* Make the text white */
+   /*text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+   /* Creates a black outline effect */
+   font-family: 'Abril Fatface', cursive; /* Use Abril Fatface font */
+ }
+
+ nav.navbar .navbar-toggler-icon {
+   filter: invert(100%);
+ }
+
+ nav.navbar .nav-link:hover {
+   text-decoration: underline;
+   color: black !important;
+ }
 
   body {
     font-family: Arial, sans-serif;
@@ -121,29 +160,9 @@
   <div class="back-to-top"></div>
 
   <header>
-    <div class="topbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 text-sm">
-            <div class="site-info">
-              <a href="#"><span class="mai-mail text-primary"></span> UPM</a>
-            </div>
-          </div>
-          <!-- <div class="col-sm-4 text-right text-sm">
-            <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-            </div>
-          </div> -->
-        </div> <!-- .row -->
-      </div> <!-- .container -->
-    </div> <!-- .topbar -->
-
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">health</span>Oracle</a>
+        <a class="navbar-brand" href="index"><span class="text-primary">health</span>Oracle</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -168,6 +187,7 @@
         </div> <!-- .navbar-collapse -->
       </div> <!-- .container -->
     </nav>
+  </header>
     <style>
           .button {
       background-color: #000000;
