@@ -10,12 +10,6 @@ The accurate analysis of medical database benefits in early disease prediction, 
 
 •	Features some additional features that will recommend home remedies as a treatment for the predicted diseases. 
 
-•	Deploy the application on a cloud platform, AWS.
-
-•	The application is secured using AWS WAF and AWS Application Load Balancer.
-
-•	Deploy the application on a Docker container to streamline the development lifecycle.
-
 •	Comparative Analysis of models like Logistic regression, SVM, Multilayer Perceptron, ANN, Naive-Bayes, Decision-tree, and some variations of decision tree like XGBoost, etc., to check for the best suitability for predicting the disease.
 
 •	This will help people get a better idea of what they may be suffering from instead of a Random Google search that predicts even symptoms of the common cold as something grave but we need to remember that this tool does not provide medical advice. It is intended for information purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment
